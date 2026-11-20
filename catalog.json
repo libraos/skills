@@ -1,0 +1,10 @@
+{
+  "$schema": "./catalog.schema.json",
+  "version": 1,
+  "groups": [
+    { "id": "market-research", "name": "Competitor and market research" },
+    { "id": "customer-research", "name": "Customer research and interview notes" },
+    { "id": "sales-marketing", "name": "Sales and marketing content" }
+  ],
+  "skills": []
+}
