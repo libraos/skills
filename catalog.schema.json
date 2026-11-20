@@ -3,19 +3,35 @@
   "title": "AgentD Next recommended Skills",
   "type": "object",
   "additionalProperties": false,
-  "required": ["version", "groups", "skills"],
+  "required": [
+    "version",
+    "groups",
+    "skills"
+  ],
   "properties": {
-    "$schema": { "type": "string" },
-    "version": { "const": 1 },
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "const": 1
+    },
     "groups": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "name"],
+        "required": [
+          "id",
+          "name"
+        ],
         "properties": {
-          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-          "name": { "type": "string" }
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "name": {
+            "type": "string"
+          }
         }
       }
     },
@@ -24,29 +40,86 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "name", "description", "group", "author", "source", "licence", "reviewedAt", "agents"],
+        "required": [
+          "id",
+          "name",
+          "description",
+          "group",
+          "author",
+          "source",
+          "licence",
+          "reviewedAt",
+          "agents"
+        ],
         "properties": {
-          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-          "name": { "type": "string" },
-          "description": { "type": "string", "maxLength": 200 },
-          "group": { "type": "string", "description": "A group id from `groups`." },
-          "author": { "type": "string" },
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "The Skill's folder name in its repository."
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "group": {
+            "type": "string",
+            "description": "A group id from `groups`."
+          },
+          "author": {
+            "type": "string"
+          },
           "source": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["url", "path", "sha"],
+            "required": [
+              "url",
+              "path",
+              "sha"
+            ],
             "properties": {
-              "url": { "type": "string", "pattern": "^https://", "description": "The Skill's git repository." },
-              "path": { "type": "string", "description": "The Skill's folder in that repository." },
-              "sha": { "type": "string", "pattern": "^[0-9a-f]{40}$", "description": "The reviewed commit. Only this commit is installed." }
+              "url": {
+                "type": "string",
+                "pattern": "^https://",
+                "description": "The Skill's git repository."
+              },
+              "path": {
+                "type": "string",
+                "description": "The Skill's folder in that repository."
+              },
+              "sha": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{40}$",
+                "description": "The reviewed commit. Only this commit is installed."
+              },
+              "notices": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Licence and notice files outside the Skill's folder, as paths in the repository, installed with the Skill."
+              }
             }
           },
-          "licence": { "type": "string", "description": "SPDX identifier of the Skill's licence at the reviewed commit." },
-          "reviewedAt": { "type": "string", "format": "date" },
+          "licence": {
+            "type": "string",
+            "description": "SPDX identifier of the Skill's licence at the reviewed commit."
+          },
+          "reviewedAt": {
+            "type": "string",
+            "format": "date"
+          },
           "agents": {
             "type": "array",
             "minItems": 1,
-            "items": { "enum": ["claude", "codex"] }
+            "items": {
+              "enum": [
+                "claude",
+                "codex"
+              ]
+            }
           }
         }
       }
