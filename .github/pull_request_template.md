@@ -15,6 +15,8 @@
 - [ ] No obfuscated or minified code
 - [ ] No instructions to turn off approvals, hide actions or send data elsewhere
 - [ ] The description in `catalog.json` matches what the Skill does
+- [ ] The licences of all installed files are confirmed, and any separate component licences and required notices are listed below
+- [ ] Agent review report attached, and signed off by a person
 
 Reviewer:
 
