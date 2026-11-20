@@ -2,9 +2,250 @@
   "$schema": "./catalog.schema.json",
   "version": 1,
   "groups": [
-    { "id": "market-research", "name": "Competitor and market research" },
-    { "id": "customer-research", "name": "Customer research and interview notes" },
-    { "id": "sales-marketing", "name": "Sales and marketing content" }
+    {
+      "id": "market-research",
+      "name": "Competitor and market research"
+    },
+    {
+      "id": "customer-research",
+      "name": "Customer research and interview notes"
+    },
+    {
+      "id": "sales-marketing",
+      "name": "Sales and marketing content"
+    }
   ],
-  "skills": []
+  "skills": [
+    {
+      "id": "competitive-brief",
+      "name": "Competitive Brief",
+      "description": "Researches named competitors on the web and writes a brief comparing their positioning, messaging and content, with gaps, threats and suggested actions. Can also draft a sales battlecard.",
+      "group": "market-research",
+      "author": "Anthropic",
+      "source": {
+        "url": "https://github.com/anthropics/knowledge-work-plugins",
+        "path": "marketing/skills/competitive-brief",
+        "sha": "0e0fcacddcc892eb92a1b7873ff9d68159c47571",
+        "notices": [
+          "marketing/LICENSE"
+        ]
+      },
+      "licence": "Apache-2.0",
+      "reviewedAt": "2026-11-20",
+      "agents": [
+        "claude",
+        "codex"
+      ]
+    },
+    {
+      "id": "competitor-analysis",
+      "name": "Competitor Analysis",
+      "description": "Uses web research to identify five direct competitors for a product and profiles their strengths, weaknesses, pricing and go-to-market, ending with differentiation opportunities.",
+      "group": "market-research",
+      "author": "Pawel Huryn",
+      "source": {
+        "url": "https://github.com/phuryn/pm-skills",
+        "path": "pm-market-research/skills/competitor-analysis",
+        "sha": "9af7bfd0bc47fdad43c2eaa7a43cd13918e7aaef",
+        "notices": [
+          "LICENSE"
+        ]
+      },
+      "licence": "MIT",
+      "reviewedAt": "2026-11-20",
+      "agents": [
+        "claude",
+        "codex"
+      ]
+    },
+    {
+      "id": "market-sizing",
+      "name": "Market Sizing",
+      "description": "Estimates TAM, SAM and SOM for a product using both top-down and bottom-up methods, with sources, growth projections and the key assumptions to validate.",
+      "group": "market-research",
+      "author": "Pawel Huryn",
+      "source": {
+        "url": "https://github.com/phuryn/pm-skills",
+        "path": "pm-market-research/skills/market-sizing",
+        "sha": "9af7bfd0bc47fdad43c2eaa7a43cd13918e7aaef",
+        "notices": [
+          "LICENSE"
+        ]
+      },
+      "licence": "MIT",
+      "reviewedAt": "2026-11-20",
+      "agents": [
+        "claude",
+        "codex"
+      ]
+    },
+    {
+      "id": "discover-competitive-analysis",
+      "name": "Competitive Analysis Matrix",
+      "description": "Compares three to five competitors in a feature matrix, pricing table and 2x2 positioning map, marking which conclusions are verified and which are inferred, with strategic recommendations.",
+      "group": "market-research",
+      "author": "Product on Purpose",
+      "source": {
+        "url": "https://github.com/product-on-purpose/pm-skills",
+        "path": "skills/discover-competitive-analysis",
+        "sha": "3456e5e309f38ac2a66943f20d4aaf8031268dfb",
+        "notices": [
+          "LICENSE"
+        ]
+      },
+      "licence": "Apache-2.0",
+      "reviewedAt": "2026-11-20",
+      "agents": [
+        "claude",
+        "codex"
+      ]
+    },
+    {
+      "id": "summarize-interview",
+      "name": "Summarize Interview",
+      "description": "Summarises a customer interview transcript into a fixed template covering current solution, jobs to be done, satisfaction, insights and action items, and saves it as a markdown file.",
+      "group": "customer-research",
+      "author": "Pawel Huryn",
+      "source": {
+        "url": "https://github.com/phuryn/pm-skills",
+        "path": "pm-product-discovery/skills/summarize-interview",
+        "sha": "9af7bfd0bc47fdad43c2eaa7a43cd13918e7aaef",
+        "notices": [
+          "LICENSE"
+        ]
+      },
+      "licence": "MIT",
+      "reviewedAt": "2026-11-20",
+      "agents": [
+        "claude",
+        "codex"
+      ]
+    },
+    {
+      "id": "user-personas",
+      "name": "User Personas",
+      "description": "Builds three research-based user personas from survey data, interviews or other files, each with a main job to be done, pains, desired gains and one unexpected insight.",
+      "group": "customer-research",
+      "author": "Pawel Huryn",
+      "source": {
+        "url": "https://github.com/phuryn/pm-skills",
+        "path": "pm-market-research/skills/user-personas",
+        "sha": "9af7bfd0bc47fdad43c2eaa7a43cd13918e7aaef",
+        "notices": [
+          "LICENSE"
+        ]
+      },
+      "licence": "MIT",
+      "reviewedAt": "2026-11-20",
+      "agents": [
+        "claude",
+        "codex"
+      ]
+    },
+    {
+      "id": "measure-survey-analysis",
+      "name": "Survey Analysis",
+      "description": "Analyses survey results with confidence labels tied to sample size, segment breakdowns, open-text themes and hypothesis status, and states what the data cannot show.",
+      "group": "customer-research",
+      "author": "Product on Purpose",
+      "source": {
+        "url": "https://github.com/product-on-purpose/pm-skills",
+        "path": "skills/measure-survey-analysis",
+        "sha": "3456e5e309f38ac2a66943f20d4aaf8031268dfb",
+        "notices": [
+          "LICENSE"
+        ]
+      },
+      "licence": "Apache-2.0",
+      "reviewedAt": "2026-11-20",
+      "agents": [
+        "claude",
+        "codex"
+      ]
+    },
+    {
+      "id": "draft-content",
+      "name": "Draft Content",
+      "description": "Drafts blog posts, social posts, newsletters, landing pages, press releases and case studies in a chosen tone, with headline options and SEO suggestions. It drafts only and does not publish.",
+      "group": "sales-marketing",
+      "author": "Anthropic",
+      "source": {
+        "url": "https://github.com/anthropics/knowledge-work-plugins",
+        "path": "marketing/skills/draft-content",
+        "sha": "0e0fcacddcc892eb92a1b7873ff9d68159c47571",
+        "notices": [
+          "marketing/LICENSE"
+        ]
+      },
+      "licence": "Apache-2.0",
+      "reviewedAt": "2026-11-20",
+      "agents": [
+        "claude",
+        "codex"
+      ]
+    },
+    {
+      "id": "email-sequence",
+      "name": "Email Sequence",
+      "description": "Plans and writes multi-email campaigns such as onboarding, nurture or win-back, with timing, branching and exit rules, a flow diagram and A/B test ideas. It drafts only and sends nothing.",
+      "group": "sales-marketing",
+      "author": "Anthropic",
+      "source": {
+        "url": "https://github.com/anthropics/knowledge-work-plugins",
+        "path": "marketing/skills/email-sequence",
+        "sha": "0e0fcacddcc892eb92a1b7873ff9d68159c47571",
+        "notices": [
+          "marketing/LICENSE"
+        ]
+      },
+      "licence": "Apache-2.0",
+      "reviewedAt": "2026-11-20",
+      "agents": [
+        "claude",
+        "codex"
+      ]
+    },
+    {
+      "id": "release-notes",
+      "name": "Release Notes",
+      "description": "Rewrites tickets, PRDs or changelogs as plain-language release notes grouped into new features, improvements, fixes and breaking changes, and saves them as a markdown file.",
+      "group": "sales-marketing",
+      "author": "Pawel Huryn",
+      "source": {
+        "url": "https://github.com/phuryn/pm-skills",
+        "path": "pm-execution/skills/release-notes",
+        "sha": "9af7bfd0bc47fdad43c2eaa7a43cd13918e7aaef",
+        "notices": [
+          "LICENSE"
+        ]
+      },
+      "licence": "MIT",
+      "reviewedAt": "2026-11-20",
+      "agents": [
+        "claude",
+        "codex"
+      ]
+    },
+    {
+      "id": "copywriting",
+      "name": "Copywriting",
+      "description": "Writes or edits website copy (homepage, landing, pricing, feature pages). It flags claims that lack evidence instead of inventing them and avoids common AI-sounding phrasing.",
+      "group": "sales-marketing",
+      "author": "Corey Haines",
+      "source": {
+        "url": "https://github.com/coreyhaines31/marketingskills",
+        "path": "skills/copywriting",
+        "sha": "5b2b400eec1e7e1cec76245a715d0b0d4fd2a9c1",
+        "notices": [
+          "LICENSE"
+        ]
+      },
+      "licence": "MIT",
+      "reviewedAt": "2026-11-20",
+      "agents": [
+        "claude",
+        "codex"
+      ]
+    }
+  ]
 }
