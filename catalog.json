@@ -13,6 +13,10 @@
     {
       "id": "sales-marketing",
       "name": "Sales and marketing content"
+    },
+    {
+      "id": "video-production",
+      "name": "Video and film production"
     }
   ],
   "skills": [
@@ -242,6 +246,27 @@
       },
       "licence": "MIT",
       "reviewedAt": "2026-11-20",
+      "agents": [
+        "claude",
+        "codex"
+      ]
+    },
+    {
+      "id": "film-production",
+      "name": "Film Production",
+      "description": "Turns a plain description into a short film: plans the shots, makes keyframes for your approval, then renders the clips with image and video services you set up and edits them into one film.",
+      "group": "video-production",
+      "author": "LibraOS",
+      "source": {
+        "url": "https://github.com/libraos/film-factory",
+        "path": "skills/film-production",
+        "sha": "cf5cfde478d9b03cbf3d4f131533fd590ace1f93",
+        "notices": [
+          "LICENSE"
+        ]
+      },
+      "licence": "MIT",
+      "reviewedAt": "2026-11-25",
       "agents": [
         "claude",
         "codex"
