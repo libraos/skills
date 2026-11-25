@@ -1,12 +1,12 @@
-# AgentD Next Skills catalogue
+# LibraOS Next Skills catalogue
 
-`catalog.json` is the list of Skills that AgentD Next shows under **Recommended**, grouped by what they are for. `catalog.schema.json` describes its format.
+`catalog.json` is the list of Skills that LibraOS Next shows under **Recommended**, grouped by what they are for. `catalog.schema.json` describes its format.
 
 The list is empty while the first entries are reviewed.
 
 ## What listing means
 
-The Skills in `catalog.json` are third-party software. This repository contains catalogue entries, not third-party Skill files. Each entry identifies a source repository, a folder, a commit and the licence recorded for that version. When you choose Install, AgentD Next downloads that version from the source repository and copies it into the selected agents' Skills folders in the selected environment. The applicable upstream licence terms govern your rights in the Skill.
+The Skills in `catalog.json` are third-party software. This repository contains catalogue entries, not third-party Skill files. Each entry identifies a source repository, a folder, a commit and the licence recorded for that version. When you choose Install, LibraOS Next downloads that version from the source repository and copies it into the selected agents' Skills folders in the selected environment. The applicable upstream licence terms govern your rights in the Skill.
 
 ## How Skills are reviewed
 
